@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(rgb(151, 149, 149), rgb(87, 56, 16));
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+}
+
+button {
+    background-color: white;
+    text-align: center;
+}
+
+.contour {
+    background-color: white;
+    margin: 10px;
+}
+
+.de {
+    padding-top: 120px;
+    height: 140px;
+    width: 140px;
+    margin: auto;
+}
+
+.icon-add, .icon-roll, .icon-hold {
+    color: red;
+    font-size: 1.6rem;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 0;
+}
+
+.player-score {
+    height: 300px;
+}
+
+.score {
+    font-size: 5rem;
+    color: red;
+    padding: 10px;
+}
+
+.button-newgame, .button-roll, .button-hold {
+    display: inline-flex;
+    font-size: 1.2rem;
+}
+
+.button-newgame {
+    margin-top: 30px;
+}
+
+.newgame, .roll, .hold {
+    padding: 0;
+}
+
+.current {
+    background-color: red;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 50px;
+}
+
+.current-score {
+    padding-bottom: 10px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+h3 {
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 1rem;
+}
