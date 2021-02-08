@@ -9,8 +9,6 @@ let player1 = 1
 let player2 = 0
 let global1 = 0
 let global2 = 0
-let globalScoreSaved1 = 0
-let globalScoreSaved2 = 0
 
 function Play() {
     if (player1 == 1 && player2 == 0) {
@@ -47,20 +45,30 @@ function Play() {
 function Hold () {
     if (player1 == 1 && player2 == 0) {
         global1 = global1 + current;
-        globalScore1.innerHTML = globalScoreSaved1 + global1;
+        globalScore1.innerHTML = global1;
         alert("Le joueur 1 a sauvegardé son current! Au joueur 2 de jouer");
+        Win();
         score1.innerHTML = '00';
         player1 = 0;
         player2 = 1;
         current = 0;
     } else if (player1 == 0 && player2 == 1) {
         global2 = global2 + current;
-        globalScore2.innerHTML = globalScoreSaved2 + global2;
+        globalScore2.innerHTML = global2;
         alert("Le joueur 2 a sauvegardé son current! Au joueur 1 de jouer");
+        Win();
         score2.innerHTML = '00';
         player1 = 1;
         player2 = 0;
         current = 0;
+    }
+}
+
+function Win() {
+    if (player1 == 1 && global1 >= 100) {
+        alert('LE JOUEUR 1 GAGNE LA PARTIE')
+    } else if (player2 == 1 && global2 >= 100) {
+        alert('LE JOUEUR 2 GAGNE LA PARTIE')
     }
 }
 
