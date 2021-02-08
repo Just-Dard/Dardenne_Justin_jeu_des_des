@@ -4,6 +4,7 @@ const score1 = document.getElementById("current-score1")
 const score2 = document.getElementById("current-score2")
 const globalScore1 = document.getElementById("global-score1")
 const globalScore2 = document.getElementById("global-score2")
+const buttonNewGame = document.getElementById('button-newgame')
 let current = 0
 let player1 = 1
 let player2 = 0
@@ -72,7 +73,21 @@ function Win() {
     }
 }
 
+function NewGame() {
+    globalScore1.innerHTML = '0';
+    globalScore2.innerHTML = '0';
+    current = 0
+    score1.innerHTML = current;
+    score2.innerHTML = current;
+    player1 = 1
+    player2 = 0
+    global1 = 0
+    global2 = 0
+}
+
 buttonRoll.addEventListener('click', Play)
+buttonNewGame.addEventListener('click', NewGame)
+
 
 
 
