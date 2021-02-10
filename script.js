@@ -1,15 +1,15 @@
-const buttonRoll = document.getElementById("button-roll")
-const buttonHold = document.getElementById("button-hold")
-const score1 = document.getElementById("current-score1")
-const score2 = document.getElementById("current-score2")
-const globalScore1 = document.getElementById("global-score1")
-const globalScore2 = document.getElementById("global-score2")
-const buttonNewGame = document.getElementById('button-newgame')
-let current = 0
-let player1 = 1
-let player2 = 0
-let global1 = 0
-let global2 = 0
+const buttonRoll = document.getElementById("button-roll");
+const buttonHold = document.getElementById("button-hold");
+const score1 = document.getElementById("current-score1");
+const score2 = document.getElementById("current-score2");
+const globalScore1 = document.getElementById("global-score1");
+const globalScore2 = document.getElementById("global-score2");
+const buttonNewGame = document.getElementById('button-newgame');
+let current = 0;
+let player1 = 1;
+let player2 = 0;
+let global1 = 0;
+let global2 = 0;
 
 function Play() {
     if (player1 == 1 && player2 == 0) {
@@ -85,8 +85,8 @@ function NewGame() {
     global2 = 0
 }
 
-buttonRoll.addEventListener('click', Play)
-buttonNewGame.addEventListener('click', NewGame)
+buttonRoll.addEventListener('click', Play);
+buttonNewGame.addEventListener('click', NewGame);
 
 
 
